@@ -1,0 +1,58 @@
+{
+  "blocks": {
+    "file": "blocks.svg",
+    "mime": "image/svg+xml",
+    "caption": "原创中文图解 · 领域构件如何协作",
+    "explain": "用预订场景解释六种建模职责；图中分组表示职责配合，不表示固定调用顺序。",
+    "license": "CC-BY-4.0",
+    "author": "DDD Model Workshop contributors"
+  },
+  "aggregate": {
+    "file": "aggregate.svg",
+    "mime": "image/svg+xml",
+    "caption": "原创中文图解 · 舱位不变量与提交边界",
+    "explain": "以海风容量规则讲解聚合与原子提交，不是原书 Car 类图的复刻。",
+    "license": "CC-BY-4.0",
+    "author": "DDD Model Workshop contributors"
+  },
+  "contexts": {
+    "file": "contexts.svg",
+    "mime": "image/svg+xml",
+    "caption": "原创中文图解 · 上下文之间的语义映射",
+    "explain": "同一业务事实在不同边界服务不同目的，集成契约需要明确翻译。",
+    "license": "CC-BY-4.0",
+    "author": "DDD Model Workshop contributors"
+  },
+  "spec": {
+    "file": "spec.svg",
+    "mime": "image/svg+xml",
+    "caption": "原创中文图解 · 规格的组合与用途",
+    "explain": "基于冷链教学案例独立绘制，帮助区分规格判定和执行机制。",
+    "license": "CC-BY-4.0",
+    "author": "DDD Model Workshop contributors"
+  },
+  "cargo-aggregate": {
+    "file": "cargo-aggregate.svg",
+    "mime": "image/svg+xml",
+    "caption": "原创中文图解 · 要求、计划与处理事实",
+    "explain": "用变化场景解释航运模型，避免从外键关系机械推导聚合边界。",
+    "license": "CC-BY-4.0",
+    "author": "DDD Model Workshop contributors"
+  },
+  "loan-shares": {
+    "file": "loan-shares.svg",
+    "mime": "image/svg+xml",
+    "caption": "原创中文图解 · 额度承诺与实际出资分离",
+    "explain": "用自设数字展示 Facility 和 Loan 的独立变化，不复刻原书饼图。",
+    "license": "CC-BY-4.0",
+    "author": "DDD Model Workshop contributors"
+  },
+  "reference": {
+    "file": "ddd-reference-overview.png",
+    "mime": "image/png",
+    "caption": "Eric Evans · DDD Reference (2015) · PDF 第 7 页 · CC BY 4.0",
+    "explain": "官方模式全景图；PNG 为原 PDF 页面的渲染，未改动图中内容。中文导览由本项目编写。来源：https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf；许可：https://creativecommons.org/licenses/by/4.0/。",
+    "license": "CC-BY-4.0",
+    "author": "Eric Evans"
+  }
+}

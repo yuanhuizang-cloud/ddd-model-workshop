@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.zip binary
+docs/index.html linguist-generated=true
+docs/ddd-code-examples.zip linguist-generated=true

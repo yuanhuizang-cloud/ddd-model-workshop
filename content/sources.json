@@ -1,0 +1,139 @@
+[
+  {
+    "id": "reference",
+    "title": "Eric Evans · DDD Reference（2015）",
+    "url": "https://www.domainlanguage.com/ddd/reference/",
+    "type": "作者官方速查",
+    "note": "把核心模式放在同一张概念地图上阅读；适合查术语及模式之间的关系。2015 版还收录领域事件、伙伴关系和泥球等后续条目。",
+    "coverage": "第 1–17 章；领域事件见第 19 章。",
+    "next": "沿“上下文 → 核心 → 模型构件”阅读，再回到案例中判断模式的使用条件。",
+    "extra": "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf"
+  },
+  {
+    "id": "fowler",
+    "title": "Martin Fowler · Bounded Context",
+    "url": "https://martinfowler.com/bliki/BoundedContext.html",
+    "type": "一手概念解释",
+    "note": "解释为什么大型业务中会存在多个合理模型，以及模型之间为什么需要显式映射。",
+    "coverage": "第 2、14 章。",
+    "next": "重点看同名异义、模型有效范围与跨边界映射；不要把上下文直接等同部署服务。"
+  },
+  {
+    "id": "cosmic",
+    "title": "Cosmic Python · Architecture Patterns with Python",
+    "url": "https://www.cosmicpython.com/",
+    "type": "作者免费在线书",
+    "note": "以 Python 展示领域模型、应用服务、仓储、工作单元和消息处理如何协作。",
+    "coverage": "第 4、6、19、20 章。",
+    "next": "推荐阅读第 1、2、4、6、7、8、12 章，追踪一次分配用例怎样进入事务并通知后续处理。"
+  },
+  {
+    "id": "go",
+    "title": "Three Dots Labs · Wild Workouts",
+    "url": "https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example",
+    "type": "Go 原作者示例仓库",
+    "note": "通过一个训练预约系统的逐步重构，展示 Go 中的领域行为、整洁架构和 CQRS。",
+    "coverage": "第 3–6、13、19、20 章。",
+    "next": "先追一个命令的调用路径，再比较版本之间的职责变化；关注工厂、更新回调和失败处理。"
+  },
+  {
+    "id": "slowbyte",
+    "title": "slowbyte · 面试被问到 DDD，怎么讲才不像背课文？",
+    "url": "https://www.cnblogs.com/slowbyte/p/23623223",
+    "type": "中文表达辅助",
+    "note": "中文 DDD 面试表达材料，可辅助组织“业务问题、模型边界、行为规则、实现取舍”的讲述顺序。",
+    "coverage": "面试参考页。",
+    "next": "概念表达需要补上并发、幂等与事务边界；钱包代码中的转账也需要结合原子性与重复请求审查。"
+  },
+  {
+    "id": "meituan17",
+    "title": "美团 · 领域驱动设计在互联网业务开发中的实践",
+    "url": "https://tech.meituan.com/2017/12/22/ddd-in-practice.html",
+    "type": "一手工程博客 · 2017",
+    "note": "以抽奖平台讨论规则散落、领域对象和架构职责，也讨论简单业务使用过程化设计的条件。",
+    "coverage": "第 1、4、5、6 章。",
+    "next": "关注规则如何找到自己的归属，以及业务模型如何支持变化。"
+  },
+  {
+    "id": "meituan24",
+    "title": "美团 · DDD 在大众点评交易系统演进中的应用",
+    "url": "https://tech.meituan.com/2024/05/09/DDD-Practice-Trading-System.html",
+    "type": "一手工程博客 · 2024",
+    "note": "以大众点评交易系统的演进讨论多业务共存、规则交织和跨角色建模。",
+    "coverage": "第 13–17 章。",
+    "next": "观察团队如何划定问题范围、统一业务理解并逐步演进，而非只模仿最终目录结构。"
+  },
+  {
+    "id": "go-repo",
+    "title": "Three Dots Labs · The Repository pattern in Go",
+    "url": "https://threedots.tech/post/repository-pattern-in-go/",
+    "type": "Go 作者教程",
+    "note": "讨论 Go 仓储接口、不同存储实现与事务更新回调。",
+    "coverage": "第 6、19 章。",
+    "next": "关注回调的重试语义：回调中包含外部副作用时，提交失败后不能无条件重做。"
+  },
+  {
+    "id": "uow",
+    "title": "Cosmic Python · Unit of Work",
+    "url": "https://www.cosmicpython.com/book/chapter_06_uow",
+    "type": "Python 深读",
+    "note": "用工作单元管理用例的原子提交与回滚，使应用服务不必直接操纵具体数据库会话。",
+    "coverage": "第 4、19、20 章。",
+    "next": "关注默认回滚、显式提交与真实数据库测试。"
+  },
+  {
+    "id": "aggregate",
+    "title": "Cosmic Python · Aggregates and Consistency Boundaries",
+    "url": "https://www.cosmicpython.com/book/chapter_07_aggregate",
+    "type": "Python 深读",
+    "note": "从库存分配出发，把业务不变量、聚合大小与并发策略联系起来。",
+    "coverage": "第 6、19 章。",
+    "next": "比较资源权威、热点冲突和聚合过大的代价。"
+  },
+  {
+    "id": "vernon",
+    "title": "Vaughn Vernon · Effective Aggregate Design",
+    "url": "https://www.dddcommunity.org/library/vernon_2011/",
+    "type": "一手聚合专题",
+    "note": "聚合设计专题：从一致性约束出发，再考虑规模、关联与事务。",
+    "coverage": "第 6 章；面试参考第 3、7 题。",
+    "next": "读 Part I 的大聚合失败场景，再理解单事务单聚合为何是一项设计经验法则。",
+    "extra": "https://www.dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf"
+  },
+  {
+    "id": "outbox",
+    "title": "Chris Richardson · Transactional Outbox",
+    "url": "https://microservices.io/patterns/data/transactional-outbox.html",
+    "type": "一手模式文档",
+    "note": "说明业务状态和发送意图如何在本地事务内持久化，以及为什么仍可能重复投递。",
+    "coverage": "第 19、20 章。",
+    "next": "沿发送成功、标记前崩溃的时间线理解 relay 与消费幂等。"
+  },
+  {
+    "id": "cqrs",
+    "title": "Martin Fowler · CQRS",
+    "url": "https://martinfowler.com/bliki/CQRS.html",
+    "type": "一手架构辨析",
+    "note": "解释读写模型分离的收益与额外复杂度，以及按上下文局部采用的条件。",
+    "coverage": "第 19 章。",
+    "next": "先区分写规则与读取需求，再判断是否需要异步投影和独立存储。"
+  },
+  {
+    "id": "specpaper",
+    "title": "Evans / Fowler · Specifications 原文",
+    "url": "https://martinfowler.com/apsupp/spec.pdf",
+    "type": "作者站论文",
+    "note": "规格模式专题：校验、筛选、按规格构造，及参数化、组合、蕴含和剩余规格。",
+    "coverage": "第 9、10、18 章。",
+    "next": "用路线约束理解集合包含；用实际已经完成的行程理解剩余条件。"
+  },
+  {
+    "id": "cnbook",
+    "title": "DDD Community · 原书中文版书目",
+    "url": "https://www.dddcommunity.org/uncategorized/evans_2003_cn/",
+    "type": "中文阅读入口",
+    "note": "《领域驱动设计：软件核心复杂性应对之道》的中文书目入口。",
+    "coverage": "原书主线。",
+    "next": "可配合正式中文译本阅读；章节中的英文短引文附教学译文。"
+  }
+]
